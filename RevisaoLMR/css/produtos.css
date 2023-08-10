@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(139, 101, 101);
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(66, 64, 60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin-left: 1%;
+}
+.menu1{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+.menu1 a{
+    font-family: 'Poppins', sans-serif;
+    color: aquamarine;
+    font-size: 1vw;
+}
+.hb{
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+.menuHB a{
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .menu1{
+        display: none;
+    }
+    .hb{
+        display: inline;
+    }
+    .hb:hover ~ .menuHB, .menuHB:hover {
+        display: block;
+    }
+}
+
+.texto-produtos{
+    text-align: left;
+    padding-left: 2%;
+    padding: 2%;
+}
+.produtos .linha1{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 2%;
+}
+.produtos img{
+    width: 64px;
+    height: 64px;
+}
+.produtos .linha1 section .produto1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #3f3f3f;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 456px;
+    margin-left: 32px;
+}
