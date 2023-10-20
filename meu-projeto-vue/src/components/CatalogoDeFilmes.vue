@@ -1,5 +1,6 @@
 <template>
     <div class="catalogo-filmes">
+        <button>Alternar</button>
     <h2>Catálogo de Filmes</h2>
     <input v-model="novoFilme" @keyup.enter="adicionarFilme"
     placeholder="Digite um novo filme" />
