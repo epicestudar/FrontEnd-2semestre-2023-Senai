@@ -1,0 +1,16 @@
+<section class="lista-vagas">
+    <!-- Início de um loop ngFor que percorre cada objeto 'vaga' na matriz
+    'vagas' -->
+    <div *ngFor="let vaga of vagas">
+    <div class="card" style="width: 18rem;">
+    <img src="assets\img\vagas\{{vaga.foto}}" class="card-img-top"
+    alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Código da Vaga: {{vaga.id}}</h5>
+    <h5 class="card-title">Vaga: {{vaga.nome}}</h5>
+    <p class="card-text">Descricão da Vaga: {{vaga.descricao}}</p>
+    <p class="card-text">Salário: R$ {{vaga.salario}},00</p>
+    </div>
+    </div>
+    </div>
+    </section>

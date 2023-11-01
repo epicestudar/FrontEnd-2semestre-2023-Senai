@@ -1,0 +1,14 @@
+.footer {
+    background-color: #343a40;
+    /* Cor escura (pode ajustar a cor de acordo com sua preferência) */
+    color: #fff;
+    /* Cor do texto no rodapé */
+    padding: 10px;
+    /* Espaçamento interno para conteúdo do rodapé */
+    text-align: center;
+    /* Alinhar o texto ao centro */
+    position: absolute;
+    bottom: 0;
+    /* Fixa o rodapé no final da página */
+    width: 100%;
+    }
