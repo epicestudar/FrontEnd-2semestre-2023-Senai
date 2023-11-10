@@ -1,0 +1,82 @@
+form {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    }
+    form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover {
+background-color: #0056b3;
+}
+/* Tabelas */
+.table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+.table th,
+.table td {
+padding: 10px;
+text-align: left;
+}
+.table th {
+background-color: #007BFF;
+color: #fff;
+}
+.table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+.table tr:hover {
+background-color: #e0e0e0;
+}
+/* ajuste técnico rodapé */
+.rodape{
+height: 8vh;
+}
+/* botoes tabela */
+.btn-listar {
+background-color: #28a745;
+color: #fff;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+.btn-listar:hover {
+background-color: #218838;
+}
+.btn-excluir {
+    background-color: #dc3545;
+    color: #fff;
+    /* Texto branco */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    .btn-excluir:hover {
+    background-color: #c82333;
+    }

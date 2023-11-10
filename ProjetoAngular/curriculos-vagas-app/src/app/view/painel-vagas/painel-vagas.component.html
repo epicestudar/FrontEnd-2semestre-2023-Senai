@@ -1,1 +1,48 @@
-<p>painel-vagas works!</p>
+<h2>Cadastrar</h2>
+<form>
+<label>Id</label><input type="text" name="id"
+[(ngModel)]="vaga.id"><br>
+<label>Nome</label><input type="text" name="nome"
+[(ngModel)]="vaga.nome"><br>
+<label>Foto</label><input type="text" name="foto"
+[(ngModel)]="vaga.foto"><br>
+<label>Descrição</label><input type="text" name="descricao"
+[(ngModel)]="vaga.descricao"><br>
+<label>Salário</label><input type="text" name="salario"
+[(ngModel)]="vaga.salario"><br>
+<button type="button" (click)="cadastrar()">Cadastrar Vaga</button>
+<button type="button" (click)="atualizar(vaga.id)">Atualizar
+Vaga</button>
+<button type="button" (click)="excluir(vaga.id)">Excluir Vaga</button>
+</form>
+<section class="lista-vagas">
+<table class="table">
+<thead>
+<tr>
+<th>Código da Vaga</th>
+<th>Vaga</th>
+<th>Descrição da Vaga</th>
+<th>Salário</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let vaga of vagas" class="vaga-row">
+<td>{{ vaga.id }}</td>
+<td>{{ vaga.nome }}</td>
+<td>{{ vaga.descricao }}</td>
+<td>R$ {{ vaga.salario }},00</td>
+<td>
+    <button type="button" (click)="listarVaga(vaga)" class="btn-
+listar">Listar</button>
+
+<button type="button" (click)="excluir(vaga.id)" class="btn-
+excluir">Excluir</button>
+
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<div class="rodape">
+</div>
